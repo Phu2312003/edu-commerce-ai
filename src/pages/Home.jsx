@@ -45,7 +45,20 @@ const Home = ({ products, liked, viewed, cart, onLike, onDetail, onAddToCart }) 
       <PriceFilter value={priceFilter} onChange={setPriceFilter} />
       <SuggestionButton onSuggest={handleSuggest} loading={suggestLoading} />
       {showSuggestions && (
-        <div className="suggestion-box">
+        <div className="suggestion-box" style={{ position: 'relative' }}>
+          <button
+            className="close-suggestion-btn"
+            style={{
+              position: 'absolute',
+              top: 10,
+              right: 14,
+              zIndex: 2
+            }}
+            aria-label="Đóng gợi ý"
+            onClick={() => setShowSuggestions(false)}
+          >
+            ×
+          </button>
           <div className="suggestion-title">
             <span className="ai-icon" role="img" aria-label="AI">🤖</span>
             Gợi ý cho bạn

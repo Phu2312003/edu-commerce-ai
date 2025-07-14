@@ -375,6 +375,25 @@ h2 {
   vertical-align: middle;
 }
 
+.close-suggestion-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #1a73e8;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-suggestion-btn:hover {
+  color: #e53935;
+  background: #e3eafc;
+}
+
 .nav-btn {
   background: none;
   border: none;
